@@ -3,5 +3,6 @@
     "editor.fontSize": 24,
     "workbench.colorTheme": "Tomorrow Night Blue",
     "workbench.iconTheme": "vscode-icons",
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.wordWrap": "on"
 }
