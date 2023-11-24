@@ -28,10 +28,31 @@
         <option value="2024-01"></option>
     </datalist>
     <hr>
-    <input type="time">
-    <datalist>
-        
+    <input type="time" list="defaultTime">
+    <datalist id="defaultTime">
+        <option value="09:00"></option>
+        <option value="14:00"></option>
+        <option value="16:00"></option>
+        <option value="18:00"></option>
     </datalist>
-
+    <hr>
+    <input type="range" min="0" max="100" list="dataRange"></input>
+    <datalist id="dataRange">
+        <option value="10"></option>        
+        <option value="20"></option>        
+        <option value="30"></option>        
+        <option value="40"></option>        
+        <option value="50"></option>        
+        <option value="60"></option>        
+        <option value="70"></option>        
+    </datalist>
+    <hr>
+    <input type="color" list="colorList">
+    <datalist id="colorList">
+        <option value="#6799FF"></option>
+        <option value="#990085"></option>
+        <option value="#ABF200"></option>
+        <option value="#FF007F"></option>
+    </datalist>
   </body>
 </html>
