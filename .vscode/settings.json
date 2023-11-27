@@ -1,7 +1,7 @@
 {
     "files.autoSave": "onFocusChange",
     "editor.fontSize": 24,
-    "workbench.colorTheme": "Tomorrow Night Blue",
+    "workbench.colorTheme": "Default High Contrast",
     "workbench.iconTheme": "vscode-icons",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.wordWrap": "on",
