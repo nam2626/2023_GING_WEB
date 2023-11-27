@@ -5,7 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>클래스 선택자</title>
     <style>
-       
+       /* 
+            클래스 선택자는 미리 CSS로 디자인을 만든 후에
+            해당 디자인이 필요한 경우에 여러 종류의 태그가
+            속성값으로 지정해서 디자인을 적용하는 방식
+
+            .클래스속성값{
+                css속성 : 값;
+                css속성 : 값;
+                css속성 : 값;
+                ...
+            }
+       */
+       .red{
+            color:red;
+       }
+        /* 클래스 under : 밑줄, 밑줄 색상을 파란색으로 설정*/
+       .under{
+            text-decoration: underline blue;
+       }
+        /* 아이디 속성값이 blue인 선택자에 글자색상을 파란색으로 설정 */
+        #blue{
+            color:blue;
+        }
+         /* 그룹 선택자 */
+        td,th{
+            padding:5px;
+            border:1px solid black;
+        }
+        table{
+            border-collapse: collapse;
+        }
     </style>
 </head>
 <body>
@@ -32,7 +62,7 @@
             <tr>
                 <td>3</td>
                 <td>모든 국민은 근로의 권리를 가진다. 국가는 사회적·경제적 방법으로 근로자의 고용의 증진과 적정임금의 보장에 노력하여야 하며, 법률이 정하는 바에 의하여 최저임금제를 시행하여야 한다.</td>
-                <td>조통</td>
+                <td class="red">조통</td>
             </tr>
             <tr>
                 <td>4</td>
