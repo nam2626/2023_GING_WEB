@@ -17,7 +17,17 @@
               padding-box : padding까지 채움
               content-box : content까지 채움
         */
-        background-clip: content-box;
+        
+        background-clip: border-box;
+       }
+       /* 클리핑 마스크 테스트*/
+       .clip_text{
+            background-image: url('img/autumn.jpg');
+            font-size: 32px;
+            font-weight: bold;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
        }
     </style>
 </head>
