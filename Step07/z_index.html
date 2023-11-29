@@ -6,7 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>z-index</title>
     <style>
-       
+       div{
+            width: 200px;
+            height: 200px;
+            border:1px solid black;
+            position: absolute;
+        }
+        .box1{
+            left: 100px;
+            top : 100px;
+            background-color: blue;
+            z-index: 1;
+        }
+        .box2{
+            left: 150px;
+            top : 150px;
+            background-color: red;
+            z-index: 2;
+        }
+        .box3{
+            left: 200px;
+            top : 200px;
+            background-color: green;
+            z-index: -1;
+        }
+
     </style>
 </head>
 <body>
