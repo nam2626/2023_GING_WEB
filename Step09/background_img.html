@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            div 가로세로 48px
+            배경 이미지를 icon.png 지정, 
+            배경 이미지는 반복이 되지 않게끔 처리
+            검은색 테두리
+        */
+        div{
+            width: 48px;
+            height: 48px;
+            background-image: url('img/icon.png');
+            background-repeat: no-repeat;
+            border:2px solid black;
+        }
+        /* 배경화면으로 오른쪽 화살표를 출력 */
+        .right_arrow{
+            background-position: -48px 0px;
+        }
+        /* 배경화면으로 프로파일이미지를 출력 */
+        .profile{
+            background-position: -96px 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="left_arrow"></div>
+    <div class="right_arrow"></div>
+    <div class="profile"></div>
+</body>
+</html>
