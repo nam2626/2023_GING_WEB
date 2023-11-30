@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃</title>
+    <style>
+        header{
+            width: 1200px;
+            height: 200px;
+            border:1px solid black;
+            box-sizing: border-box;
+            margin:0 auto;
+        }
+        nav{
+            width: 1200px;
+            border:1px solid black;
+            box-sizing: border-box;
+            margin:0 auto;
+        }
+        ul{
+            list-style-type: none;
+            text-align: center;
+        }
+        li{
+            width: 200px;
+            display: inline-block;
+            padding: 10px 0px;
+            text-align: center;
+        }
+        .main_container{
+            width: 1200px;
+            margin:0 auto;
+            
+        }
+        section{
+            width: 900px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            height: 600px;
+            float: left;
+        }
+        article{
+            width: calc(100% / 3);
+            height: 150px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            float: left;
+        }
+        aside{
+            width: 300px;
+            border: 1px solid black;
+            height: 600px;
+            float: left;
+            box-sizing: border-box;
+        }
+        footer{
+            width: 1200px;
+            margin:0 auto;
+            clear: both;
+            border: 1px solid black;
+            box-sizing: border-box;
+            padding: 10px 0px;
+        }
+        .footer_container{
+            display: inline-block;
+            width: 100%;
+        }
+        .logo{
+            width: 200px;
+            height: 150px;
+            border: 1px solid black;
+            float: left;
+        }
+        .company{
+            width: 200px;
+            height: 150px;
+            border: 1px solid black;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header 제목영역</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu2</a></li>
+            <li><a href="#">menu3</a></li>
+            <li><a href="#">menu4</a></li>
+            <li><a href="#">menu5</a></li>
+        </ul>
+    </nav>
+    <div class="main_container">
+        <section>
+            <h2>Section 제목 영역</h2>
+            <article>
+                <h3>article 제목 영역</h3>
+                <p>article 내용 영역</p>
+            </article>
+            <article>
+                <h3>article 제목 영역</h3>
+                <p>article 내용 영역</p>
+            </article>
+            <article>
+                <h3>article 제목 영역</h3>
+                <p>article 내용 영역</p>
+            </article>
+            <article>
+                <h3>article 제목 영역</h3>
+                <p>article 내용 영역</p>
+            </article>
+            <article>
+                <h3>article 제목 영역</h3>
+                <p>article 내용 영역</p>
+            </article>
+            <article>
+                <h3>article 제목 영역</h3>
+                <p>article 내용 영역</p>
+            </article>
+            <article>
+                <h3>article 제목 영역</h3>
+                <p>article 내용 영역</p>
+            </article>
+            <article>
+                <h3>article 제목 영역</h3>
+                <p>article 내용 영역</p>
+            </article>
+            <article>
+                <h3>article 제목 영역</h3>
+                <p>article 내용 영역</p>
+            </article>
+        </section>
+        <aside>
+            <h2>Aside 제목 영역</h2>
+        </aside>
+    </div>
+    <footer>
+        <div class="footer_container">
+            <div class="logo">로고</div>
+            <div class="company">회사정보</div>
+        </div>
+    </footer>
+</body>
+</html>
