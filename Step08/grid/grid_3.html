@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그리드</title>
+    <style>
+        .container{
+            display: grid;
+            width: 1200px;
+            border:1px solid black;
+            margin:0 auto;
+            grid-template-areas: 
+            "box2 box1 box4"
+            "box2 box3 box3"
+            "box2 box3 box3"
+            "box5 box5 box5";
+            grid-template-rows: repeat(3, minmax(200px,1fr)) 100px;
+        }
+        .item{
+            padding:10px;
+            border:1px solid black;
+        }
+        .box1{
+            background-color: red;
+            grid-area: box1;
+        }
+        .box2{
+            background-color: blueviolet;
+            grid-area: box2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">3</div>
+        <div class="item box1">1</div>
+        <div class="item box2">2</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">6</div>
+        <div class="item">6</div>
+</div>
+</body>
+</html>
