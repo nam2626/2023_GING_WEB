@@ -23,9 +23,69 @@
         font-size: 1.5em;
         font-weight: bold;
     }
+    .flex_row_1{
+        display: flex;
+        flex-direction: row;
+        /* 줄바꿈 없이 전부 나열, 크기 조정 O */
+        flex-wrap: nowrap;
+        border:1px solid red;
+    }
+    .flex_row_2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* 배치할 공간이 모자르면 줄바꿈, 크기 조정 X */
+        border:1px solid red;
+    }
+    .flex_row_3{
+        display: flex;
+        flex-direction: row;
+        /* 배치할 공간이 모자르면 줄바꿈, 크기 조정 X, 순서가 역 바뀜*/
+        flex-wrap: wrap-reverse;
+        border:1px solid red;
+    }
+    .flex_row_4{
+        display: flex;
+        /* direction과 wrap 속성을 한번에 표기 */
+        flex-flow: row wrap-reverse;
+        border:1px solid red;
+    }
     </style>
 </head>
 <body>
-    
+    <div class="flex_container">
+        <div class="flex_row_1">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+        </div>
+        <div class="flex_row_2">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+        </div>
+        <div class="flex_row_3">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+        </div>
+        <div class="flex_row_4">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+        </div>
+    </div>
 </body>
 </html>
