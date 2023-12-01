@@ -4,6 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>그리드</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .container{
+            display: grid;
+            width: 1200px;
+            margin: 0 auto;
+            grid-template-columns: repeat(6,1fr);
+        }
+        h1,h2,h3{
+            padding:10px 0px;
+        }
+        header{
+            text-align: center;
+            background-color: gray;
+            grid-column: 1 / span 6;
+        }
+        nav{
+            grid-column: 1 / span 6;
+            background-color: greenyellow;
+        }
+        ul{
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+        }
+        li{
+            padding:20px 0px;
+            line-height: 16px;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color:black;
+        }
+        section{
+            grid-column: 1 / span 6;
+        }
+        article{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            column-gap: 10px;
+        }
+        .article_title{
+            grid-row: 1;
+            grid-column: 1 / span 5;
+        }
+        img{
+            width: 100%;
+        }
+        footer{
+            grid-column: 1 / span 6;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            background-color: #e9e9e9;
+            margin-top: 20px;
+            padding:10px 50px;
+        }
+        .company,.call{
+            display: block;
+        }
+        .company li,.call li{
+            text-align: left;
+            padding: 5px 0px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -21,83 +89,79 @@
         </nav>
         <section>
             <article>
-                <h2>article 제목</h2>
-                <div class="article_grid">
+                <h2 class="article_title">article 제목</h2>
                     <div class="item">
-                        <img src="img/back.jpg" alt="썸네일 이미지">
+                        <img src="../img/autumn.jpg" alt="썸네일 이미지">
                         <h3>썸네일 제목</h3>
                         <p>썸네일 내용</p>
                     </div>
                     <div class="item">
-                        <img src="img/back.jpg" alt="썸네일 이미지">
+                        <img src="../img/autumn.jpg" alt="썸네일 이미지">
                         <h3>썸네일 제목</h3>
                         <p>썸네일 내용</p>
                     </div>
                     <div class="item">
-                        <img src="img/back.jpg" alt="썸네일 이미지">
+                        <img src="../img/autumn.jpg" alt="썸네일 이미지">
                         <h3>썸네일 제목</h3>
                         <p>썸네일 내용</p>
                     </div>
                     <div class="item">
-                        <img src="img/back.jpg" alt="썸네일 이미지">
+                        <img src="../img/autumn.jpg" alt="썸네일 이미지">
                         <h3>썸네일 제목</h3>
                         <p>썸네일 내용</p>
                     </div>
                     <div class="item">
-                        <img src="img/back.jpg" alt="썸네일 이미지">
+                        <img src="../img/autumn.jpg" alt="썸네일 이미지">
                         <h3>썸네일 제목</h3>
                         <p>썸네일 내용</p>
                     </div>
+                  
 
-                </div>
             </article>
             <article>
-                <h2>article 제목</h2>
-                <div class="article_grid">
+                <h2 class="article_title">article 제목</h2>
+               
                     <div class="item">
-                        <img src="img/back.jpg" alt="썸네일 이미지">
+                        <img src="../img/autumn.jpg" alt="썸네일 이미지">
                         <h3>썸네일 제목</h3>
                         <p>썸네일 내용</p>
                     </div>
                     <div class="item">
-                        <img src="img/back.jpg" alt="썸네일 이미지">
+                        <img src="../img/autumn.jpg" alt="썸네일 이미지">
                         <h3>썸네일 제목</h3>
                         <p>썸네일 내용</p>
                     </div>
                     <div class="item">
-                        <img src="img/back.jpg" alt="썸네일 이미지">
+                        <img src="../img/autumn.jpg" alt="썸네일 이미지">
                         <h3>썸네일 제목</h3>
                         <p>썸네일 내용</p>
                     </div>
                     <div class="item">
-                        <img src="img/back.jpg" alt="썸네일 이미지">
+                        <img src="../img/autumn.jpg" alt="썸네일 이미지">
                         <h3>썸네일 제목</h3>
                         <p>썸네일 내용</p>
                     </div>
                     <div class="item">
-                        <img src="img/back.jpg" alt="썸네일 이미지">
+                        <img src="../img/autumn.jpg" alt="썸네일 이미지">
                         <h3>썸네일 제목</h3>
                         <p>썸네일 내용</p>
                     </div>
+                  
 
-                </div>
             </article>
+       
         </section>
         <footer>
-            <div class="company">
-                <ul>
+            <ul class="company">
                     <li>회사명 : OOOO</li>
                     <li>대표 : OOO</li>
                     <li>사업자번호 : OOO-OOOO-OOOOO</li>
                     <li>통신판매업신고번호 : OOO-OOOO-OOOOO</li>
-                </ul>
-            </div>
-            <div class="call">
-                <ul>
+            </ul>
+            <ul class="call">
                     <li>고객 센터 연락처 : OO-OOOO-OOOO</li>
                     <li>담당자 이메일 : test@gmail.com</li>
-                </ul>
-            </div>
+            </ul>
         </footer>
     </div>
 </body>
