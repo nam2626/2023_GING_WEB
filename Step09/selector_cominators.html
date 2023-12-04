@@ -20,6 +20,85 @@
       p > span{
         text-decoration: underline;
       }
+
+      /* 
+        자손 선택자
+            선택자 선택자{
+                속성 : 값;
+            }  
+      */
+      .container li{
+        color:blueviolet;
+      }
+      /* 
+        동생 요소 선택자
+        선택자+선택자{
+            속성 : 값;
+        }
+        
+        자기 아래 동생들 전부 선택
+        선택자~선택자{
+            속성 : 값;
+        }
+      */
+      .brother1+li{
+        text-decoration: underline;
+      }
+      .brother2~li{
+        color: red;
+      }
+      /* 가상클래스 */
+     /* 
+        선택자:가상클래스{
+            속성:값;
+        }
+     */
+     /* 하이퍼링크가 걸려있을때 */
+     a:link{
+        text-decoration: none;
+        color:crimson;
+     }
+     /* 방문한 적이 있는 페이지 링크 */
+     a:visited{
+        text-decoration: underline;
+        color: cadetblue;
+     }
+     /* 마우스를 해당 태그 및 선택자에 올렸을때 */
+     a:hover{
+        background-color: aquamarine;
+     }
+     /*  h2에 마우스가 올라가면 밑줄이 나타나게끔 처리  */
+     h2:hover{
+        text-decoration: underline;
+     }
+     /* 마우스를 클릭했을때 */
+     a:active{
+        background-color: blue;
+     }
+     /* 해당 태그가 선택이 되었을때 */
+     input:focus{
+        background-color: darkcyan;
+        outline: none;
+     }
+     /* disabled : 비활성화 된 상태 */
+     input:disabled{
+         background-color: red !important;
+    }
+    input:read-only{
+        border:2px solid blue;
+        background-color: burlywood;
+    }
+    input:required{
+        border: 2px solid brown;
+    }
+    /* 체크박스(라디오버튼)가 체크된 상태 */
+    #chk:checked{
+        width: 100px;
+        height : 100px;
+    }
+    #chk:checked+label{
+        background-color: chocolate;
+    }
     </style>
 </head>
 <body>
