@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서브 페이지</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .flex_container{
+            width: 1200px;
+            display: flex;
+            flex-direction: column;
+            margin:0 auto;
+        }
+        header{
+             background-color: #e9e9e9;
+             display: flex;
+             flex-direction: row;
+             flex-flow: wrap;
+             justify-content: flex-end;
+
+        }
+        .member_bar{
+            display: flex;
+            flex-direction: row;
+            padding:5px 10px;
+        }
+        .profile_info{
+            line-height: 24px;
+        }
+        .profile{
+            display: inline-block;
+            width: 48px;
+            height: 48px;
+            background-image: url('img/icon.png');
+            background-repeat: no-repeat;
+            background-position: -96px;
+        }
+        .ad_img{
+            position: relative;
+            font-size: 0px;
+        }
+        .ad_img > button{
+            width: 48px;
+            height: 48px;
+            top : calc(50% - 24px);
+            background-color: rgba(255, 255, 255,0.5);
+            border:none;
+            position: absolute;
+        }
+        .left_arrow{
+            background-image: url('img/icon.png');
+            background-repeat: no-repeat;
+            left: 0px;
+        }
+        .right_arrow{
+            background-image: url('img/icon.png');
+            background-repeat: no-repeat;
+            background-position: -48px;
+            right: 0px;
+        }
+        nav{
+            background-color: #e9e9e9;
+        }
+        nav ul{
+            list-style-type: none;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+        }
+        nav a:link, nav a:visited{
+            display: inline-block;
+            font-weight: bold;
+            text-decoration: none;
+            color:black;
+            width: 200px;
+            padding:20px 0px;
+            text-align: center;
+            font-size: 20px;
+            line-height: 20px;
+        }
+        nav a:hover{
+            background-color: #afafaf;
+        }
+        section{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            margin-top: 20px;
+        }
+       
+        footer{
+            background-color: #e9e9e9;
+            padding-top:10px;
+            padding-bottom: 20px;
+            padding-left: 50px;
+            padding-right: 50px;
+            margin-top: 20px;
+        }
+        footer ul{
+            list-style-type: none;
+        }
+        
+        footer ul li{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex_container">
+        <header>
+            <div class="member_bar">
+                <div><a href="" class="profile"></a></div>
+                <div class="profile_info">
+                    OOO님이 로그인 하셨습니다.<br>
+                    로그아웃 | 정보수정
+                </div>
+            </div>
+            <div class="ad_img">
+                <img src="img/main_4.jpg" alt="">
+                <button class="left_arrow" type="button"></button>
+                <button class="right_arrow" type="button"></button>
+            </div>    
+        </header>
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">예약</a></li>
+                <li><a href="">펜션 스토리</a></li>
+                <li><a href="">펜션 소개</a></li>
+                <li><a href="">오시는 길</a></li>
+            </ul>
+        </nav>
+        <section>
+           <article>
+                <img src="img/map.png" alt="">
+                <div class="content">
+                   <h2>오시는길</h2>
+                   <p>모든 국민은 직업선택의 자유를 가진다. 대법관의 임기는 6년으로 하며, 법률이 정하는 바에 의하여 연임할 수 있다. 헌법재판소 재판관은 정당에 가입하거나 정치에 관여할 수 없다.</p>
+                    <p>모든 국민은 주거의 자유를 침해받지 아니한다. 주거에 대한 압수나 수색을 할 때에는 검사의 신청에 의하여 법관이 발부한 영장을 제시하여야 한다. 군인은 현역을 면한 후가 아니면 국무위원으로 임명될 수 없다.</p>
+                </div>
+           </article>
+        </section>
+        <footer>
+            <ul>
+                <li>OOOO 펜션</li>
+                <li>대표자 : OOOO</li>
+                <li>연락처 : <a href="tel:010-0000-0000">010-0000-0000</a></li>
+                <li>주소 : 강원도 평창시 OOOOOOOOO</li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
