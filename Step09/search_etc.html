@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+        }
+        #kind{
+            height: 42px;
+            border:1px solid black;
+            outline: none;
+        }
+        .text_box{
+            border: 1px solid black;
+            height: 42px;
+            box-sizing: border-box;
+        }
+        .search{
+            width:250px;
+            height: 100%;
+            outline: none;
+            box-sizing: border-box;
+            border: none;
+            background-image: url('img/zoom.png');
+            background-repeat: no-repeat;
+            background-size: 36px;
+            background-position: 5px center;
+            padding-left: 42px;
+        }
+        button{
+            height: 42px;
+            width: 70px;
+            background: none;
+            border: none;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <select id="kind">
+            <option value="title">제목</option>
+            <option value="id">아이디</option>
+            <option value="content">내용</option>
+        </select>
+        <div class="text_box">
+            <input type="text" class="search">
+        </div>
+        <button>검색</button>
+    </div>
+</body>
+</html>
