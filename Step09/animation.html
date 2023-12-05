@@ -25,6 +25,23 @@
             animation-direction: alternate-reverse; */
             animation: ani1 2s infinite alternate;
          }
+
+         @keyframes ani2 {
+            0%{
+                left: 0px;
+            }
+            50%{
+                background-color: cornflowerblue;
+            }
+            100%{
+                left: calc(100% - 200px);
+                border-radius: 100px;
+            }
+         }
+         .mbox{
+            animation: ani2 5s infinite alternate;
+            position: relative;
+         }
     </style>
 </head>
 <body>
