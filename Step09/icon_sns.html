@@ -4,6 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .sns_bar{
+            display: flex;
+            flex-flow: row nowrap;
+            list-style-type: none;
+        }
+        .sns_bar li{
+            width: 48px;
+            height: 48px;
+            background-image: url('img/sns_icon_pack.png');
+            background-repeat: no-repeat;
+            margin-right: 20px;
+        }
+        .sns_bar li:hover{
+            background-position-x: -48px;
+            transform: scale(1.5,1.5);
+            transition: 0.2s transform;
+        }
+        .kakao{
+            background-position-y: -144px;
+        }
+        .google{
+            background-position-y: -48px;
+        }
+        .youtube{
+            background-position-y: -96px;
+        }
+        .instargram{
+            background-position-y: -240px;
+        }
+        .twitter{
+            background-position-y: -192px;
+        }
+    </style>
 </head>
 <body>
     <ul class="sns_bar">
